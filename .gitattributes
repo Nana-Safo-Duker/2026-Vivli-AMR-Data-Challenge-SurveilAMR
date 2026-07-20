@@ -1,0 +1,34 @@
+# Auto-detect text files and normalize line endings to LF in the repo.
+* text=auto eol=lf
+
+# Explicit text sources
+*.py text eol=lf
+*.R text eol=lf
+*.r text eol=lf
+*.md text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.cff text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Notebooks: treat as text for diffing but avoid mangling embedded base64 output
+*.ipynb text eol=lf -diff
+
+# Binary assets — do not diff, do not normalize line endings
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+*.xlsm binary
+
+# Mark generated/vendored figures so GitHub language stats ignore them
+outputs/figures/* linguist-generated=true
