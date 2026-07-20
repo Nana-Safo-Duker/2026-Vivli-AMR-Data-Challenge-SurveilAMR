@@ -1,0 +1,75 @@
+# ---------------------------------------------------------------------------
+# Local-only project data and documentation
+# data/ holds Vivli-approved raw files and derived summaries; access is
+# granted per-request under a Vivli Data Use Agreement and MUST NOT be
+# redistributed, so the whole directory (raw and processed) is excluded.
+# docs/ holds study protocols, checklists, and background notes supplied
+# with the data request; kept locally rather than published in this repo.
+# ---------------------------------------------------------------------------
+data/
+docs/
+
+# Named raw datasets (in case they are ever dropped at the repo root)
+atlas_vivli_*.csv
+ATLAS_Antibiotics*.csv
+BEDAQUILINE*DREAM*.xlsx
+Omadacycline*Surveillance*.xlsx
+GASAR*Study*III*.xlsx
+spidaar_definitions.xls
+spidaar_isolatedata.xls
+spidaar_patientdata.xls
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------------
+# R
+# ---------------------------------------------------------------------------
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+r/renv/library/
+r/renv/staging/
+
+# ---------------------------------------------------------------------------
+# Jupyter / notebooks
+# ---------------------------------------------------------------------------
+*.ipynb_checkpoints
+
+# ---------------------------------------------------------------------------
+# OS / editor
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ---------------------------------------------------------------------------
+# Environment / secrets
+# ---------------------------------------------------------------------------
+.env
+.env.*
+
+# ---------------------------------------------------------------------------
+# Large export artifacts (regenerate locally; keep only curated copies)
+# ---------------------------------------------------------------------------
+outputs/tmp/
+*.tmp
